@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final HTML Class</title>
+
+    <style>
+        tr>td{
+            border: 3px solid blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Structure</h1>
+    <table style="border: 5px solid red; width: 80%; margin: 0 auto;">
+        <tr>
+            <td>R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+            <td>R1C4</td>
+        </tr>
+        <tr>
+            <td>R2C1</td>
+            <td>R2C2</td>
+            <td>R2C3</td>
+            <td>R2C4</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="gender">Select Gender</label>
+            </td>
+            <td colspan="2">
+                <select name="" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">R4C1</td>
+        </tr>
+    </table>
+</body>
+</html>
