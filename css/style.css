@@ -1,0 +1,84 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(120deg, aquamarine, azure);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+.container{
+    height: 460px;
+    width: 460px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+
+.profile-photo{
+    display: block;
+    margin: 10px auto 20px auto;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.container h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.container form{
+    padding: 0 40px;
+}
+
+form .form-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.form-field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.form-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.form-field span::before{
+    content: '';
+    position: absolute;
+    top: 40;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+
+.form-field input:focus ~ label,
+.form-field input:valid ~ label{
+    top: -5px;
+    color:#2691d9;
+}
+
+
